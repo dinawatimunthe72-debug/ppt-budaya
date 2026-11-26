@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerPoint Tradisi Budaya Indonesia</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;font-family:Arial,sans-serif;
+ background:#172554;color:white;
+}
+.slide{
+ display:none;min-height:100vh;padding:55px 8%;
+ background:linear-gradient(135deg,#1e3a8a,#0f766e);
+ animation:fade .5s;
+}
+.slide.active{display:flex;flex-direction:column;justify-content:center}
+@keyframes fade{from{opacity:.2}to{opacity:1}}
+h1{font-size:clamp(35px,6vw,65px);margin:10px 0}
+h2{font-size:clamp(28px,4vw,42px);color:#fde68a}
+p,li{font-size:clamp(18px,2vw,25px);line-height:1.6}
+ul{padding-left:30px}
+.subtitle{font-size:25px;color:#dbeafe}
+.tag{background:#facc15;color:#172554;padding:10px 18px;
+ border-radius:30px;display:inline-block;font-weight:bold;width:max-content}
+.content{
+ background:#ffffff18;padding:25px 35px;border-radius:20px;
+ border:1px solid #ffffff40;max-width:1000px;
+}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#ffffff20;padding:20px;border-radius:15px}
+.card h3{color:#fde68a;font-size:24px}
+.navigation{
+ position:fixed;bottom:18px;left:0;right:0;
+ display:flex;justify-content:center;align-items:center;gap:15px;
+ z-index:5;
+}
+button{
+ border:0;padding:12px 22px;border-radius:25px;
+ background:#facc15;color:#172554;font-weight:bold;
+ font-size:16px;cursor:pointer;
+}
+button:hover{background:white}
+#counter{
+ position:fixed;top:18px;right:25px;
+ background:#ffffff25;padding:10px 16px;border-radius:20px;
+}
+.quiz-option{
+ display:block;width:100%;text-align:left;margin:10px 0;
+ background:#ffffff20;color:white;border:1px solid #ffffff70;
+ border-radius:12px;padding:15px;font-size:18px;
+}
+.quiz-option:hover{background:#ffffff40}
+#feedback{font-weight:bold;margin-top:15px}
+@media(max-width:650px){
+ .slide{padding:55px 6% 100px}
+ .columns{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="counter"></div>
+
+<section class="slide active">
+ <span class="tag">MATERI PEMBELAJARAN SMP</span>
+ <h1>TRADISI BUDAYA INDONESIA</h1>
+ <p class="subtitle">Mengenal Keberagaman Tradisi dan Warisan Budaya Nusantara</p>
+ <div class="content">
+  <p>Indonesia memiliki beragam suku bangsa, bahasa, adat istiadat, dan tradisi budaya. Keberagaman tersebut merupakan kekayaan bangsa yang harus kita jaga dan lestarikan.</p>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>1. Pengertian Tradisi Budaya</h2>
+ <div class="content">
+  <p>Tradisi budaya adalah kebiasaan, adat istiadat, dan nilai-nilai yang diwariskan secara turun-temurun dari generasi ke generasi dalam suatu masyarakat.</p>
+  <p>Tradisi budaya menjadi identitas suatu kelompok masyarakat dan mencerminkan cara hidup serta nilai-nilai yang mereka junjung tinggi.</p>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>2. Tradisi Budaya Sumatra</h2>
+ <div class="columns">
+  <div class="card">
+   <h3>Sumatra Utara</h3>
+   <p>• Mangulosi: tradisi pemberian ulos dalam masyarakat Batak.</p>
+   <p>• Mangokal Holi: tradisi pemindahan tulang leluhur dalam sebagian masyarakat Batak.</p>
+  </div>
+  <div class="card">
+   <h3>Aceh</h3>
+   <p>• Peusijuek: tradisi tepung tawar sebagai ungkapan doa dan harapan baik.</p>
+   <p>• Seudati: seni tari tradisional Aceh.</p>
+  </div>
+  <div class="card">
+   <h3>Sumatra Barat</h3>
+   <p>• Tabuik: tradisi budaya masyarakat Pariaman.</p>
+   <p>• Makan Bajamba: tradisi makan bersama.</p>
+  </div>
+  <div class="card">
+   <h3>Riau</h3>
+   <p>• Tepuk Tepung Tawar: upacara adat untuk mendoakan keselamatan.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>3. Tradisi Budaya Pulau Jawa</h2>
+ <div class="columns">
+  <div class="card">
+   <h3>Jawa Tengah</h3>
+   <p>• Sekaten: tradisi budaya yang berkaitan dengan peringatan Maulid Nabi.</p>
+   <p>• Grebeg: upacara adat keraton.</p>
+  </div>
+  <div class="card">
+   <h3>Yogyakarta</h3>
+   <p>• Labuhan: tradisi persembahan sebagai bentuk doa dan harapan.</p>
+   <p>• Grebeg Syawal: tradisi keraton saat Idulfitri.</p>
+  </div>
+  <div class="card">
+   <h3>Jawa Barat</h3>
+   <p>• Seren Taun: upacara adat sebagai ungkapan syukur atas hasil panen.</p>
+  </div>
+  <div class="card">
+   <h3>Jawa Timur</h3>
+   <p>• Kasada: upacara adat masyarakat Tengger di Gunung Bromo.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>4. Bali dan Nusa Tenggara</h2>
+ <div class="columns">
+  <div class="card">
+   <h3>Bali</h3>
+   <p>• Ngaben: upacara pembakaran jenazah dalam tradisi Hindu Bali.</p>
+   <p>• Melasti: upacara penyucian diri dan benda sakral.</p>
+  </div>
+  <div class="card">
+   <h3>Nusa Tenggara Barat</h3>
+   <p>• Bau Nyale: tradisi menangkap cacing laut di Lombok.</p>
+  </div>
+  <div class="card">
+   <h3>Nusa Tenggara Timur</h3>
+   <p>• Pasola: tradisi permainan ketangkasan berkuda masyarakat Sumba.</p>
+   <p>• Reba: upacara adat masyarakat Ngada.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>5. Tradisi Budaya Kalimantan</h2>
+ <div class="columns">
+  <div class="card">
+   <h3>Kalimantan Barat</h3>
+   <p>• Gawai Dayak: perayaan syukur atas hasil panen.</p>
+  </div>
+  <div class="card">
+   <h3>Kalimantan Tengah</h3>
+   <p>• Tiwah: upacara adat masyarakat Dayak Ngaju.</p>
+  </div>
+  <div class="card">
+   <h3>Kalimantan Selatan</h3>
+   <p>• Baayun Maulid: tradisi mengayun anak dalam peringatan Maulid Nabi.</p>
+  </div>
+  <div class="card">
+   <h3>Kalimantan Timur</h3>
+   <p>• Erau: festival adat dan budaya masyarakat Kutai.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>6. Tradisi Budaya Sulawesi</h2>
+ <div class="columns">
+  <div class="card">
+   <h3>Sulawesi Selatan</h3>
+   <p>• Rambu Solo': upacara pemakaman adat masyarakat Toraja.</p>
+   <p>• Ma'nene: tradisi penghormatan kepada leluhur.</p>
+  </div>
+  <div class="card">
+   <h3>Sulawesi Utara</h3>
+   <p>• Tulude: tradisi syukur masyarakat Nusa Utara.</p>
+  </div>
+  <div class="card">
+   <h3>Sulawesi Tengah</h3>
+   <p>• Balia: tradisi pengobatan adat masyarakat Kaili.</p>
+  </div>
+  <div class="card">
+   <h3>Sulawesi Tenggara</h3>
+   <p>• Karia: tradisi adat masyarakat Muna.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>7. Maluku dan Papua</h2>
+ <div class="columns">
+  <div class="card">
+   <h3>Maluku</h3>
+   <p>• Pukul Sapu: tradisi budaya masyarakat Mamala dan Morella.</p>
+   <p>• Pela Gandong: ikatan persaudaraan antarnegeri.</p>
+  </div>
+  <div class="card">
+   <h3>Papua</h3>
+   <p>• Bakar Batu: tradisi memasak bersama menggunakan batu panas.</p>
+   <p>• Wor: tradisi upacara adat masyarakat Biak.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>8. Manfaat Melestarikan Tradisi Budaya</h2>
+ <div class="content">
+  <ul>
+   <li>Menjaga identitas dan jati diri bangsa.</li>
+   <li>Memperkenalkan kekayaan budaya Indonesia kepada dunia.</li>
+   <li>Mempererat persatuan dan kesatuan masyarakat.</li>
+   <li>Menghargai keberagaman suku dan adat istiadat.</li>
+   <li>Mewariskan nilai-nilai luhur kepada generasi muda.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>9. Cara Melestarikan Budaya</h2>
+ <div class="content">
+  <ul>
+   <li>Mempelajari tradisi budaya daerah sendiri.</li>
+   <li>Mengikuti kegiatan seni dan budaya daerah.</li>
+   <li>Menghormati tradisi daerah lain.</li>
+   <li>Memperkenalkan budaya melalui media digital secara bertanggung jawab.</li>
+   <li>Mengajak generasi muda untuk mencintai budaya Indonesia.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="slide">
+ <h2>10. Kuis Interaktif</h2>
+ <div class="content">
+  <p id="question"></p>
+  <div id="options"></div>
+  <p id="feedback"></p>
+  <button onclick="nextQuestion()" id="nextBtn" style="display:none">Soal Berikutnya</button>
+  <p id="score"></p>
+ </div>
+</section>
+
+<section class="slide">
+ <h1>TERIMA KASIH</h1>
+ <h2>Budaya Kita, Identitas Kita</h2>
+ <div class="content">
+  <p>Keberagaman budaya bukan alasan untuk terpecah, melainkan kekuatan untuk bersatu.</p>
+  <h2 style="text-align:center">Bhinneka Tunggal Ika</h2>
+ </div>
+</section>
+
+<div class="navigation">
+ <button onclick="changeSlide(-1)">❮ Sebelumnya</button>
+ <button onclick="changeSlide(1)">Selanjutnya ❯</button>
+</div>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let current=0;
+
+function showSlide(){
+ slides.forEach((s,i)=>s.classList.toggle("active",i===current));
+ document.getElementById("counter").textContent=
+ "Slide "+(current+1)+" / "+slides.length;
+}
+function changeSlide(n){
+ current=Math.max(0,Math.min(slides.length-1,current+n));
+ showSlide();
+}
+document.addEventListener("keydown",e=>{
+ if(e.key==="ArrowRight")changeSlide(1);
+ if(e.key==="ArrowLeft")changeSlide(-1);
+});
+
+const questions=[
+ {q:"Tradisi Mangulosi berasal dari masyarakat ....",
+ a:["Batak","Dayak","Minangkabau","Bugis"],c:0},
+ {q:"Tradisi Tabuik berasal dari daerah ....",
+ a:["Aceh","Pariaman","Lombok","Bali"],c:1},
+ {q:"Upacara Kasada dilakukan oleh masyarakat ....",
+ a:["Tengger","Toraja","Dayak","Baduy"],c:0},
+ {q:"Gawai Dayak merupakan tradisi yang berkaitan dengan ....",
+ a:["Pernikahan","Syukur hasil panen","Kelahiran","Perdagangan"],c:1},
+ {q:"Tradisi Bakar Batu berasal dari ....",
+ a:["Papua","Bali","Jawa Barat","Sumatra Barat"],c:0}
+];
+
+let qIndex=0,correct=0,answered=false;
+function loadQuestion(){
+ let q=questions[qIndex];
+ document.getElementById("question").textContent=
+ (qIndex+1)+". "+q.q;
+ document.getElementById("options").innerHTML="";
+ document.getElementById("feedback").textContent="";
+ document.getElementById("nextBtn").style.display="none";
+ answered=false;
+ q.a.forEach((a,i)=>{
+  let b=document.createElement("button");
+  b.className="quiz-option";
+  b.textContent=String.fromCharCode(65+i)+". "+a;
+  b.onclick=()=>answer(i);
+  document.getElementById("options").appendChild(b);
+ });
+}
+function answer(i){
+ if(answered)return;
+ answered=true;
+ let q=questions[qIndex];
+ if(i===q.c){
+  correct++;
+  document.getElementById("feedback").textContent="Benar! Jawaban tepat.";
+ }else{
+  document.getElementById("feedback").textContent=
+  "Belum tepat. Jawaban benar: "+q.a[q.c];
+ }
+ document.getElementById("nextBtn").style.display="inline-block";
+ document.querySelectorAll(".quiz-option").forEach(b=>b.disabled=true);
+}
+function nextQuestion(){
+ qIndex++;
+ if(qIndex<questions.length){
+  loadQuestion();
+ }else{
+  document.getElementById("question").textContent="Kuis selesai!";
+  document.getElementById("options").innerHTML="";
+  document.getElementById("feedback").textContent=
+  "Nilai kamu: "+(correct*20)+"/100 ("+correct+" benar dari 5 soal).";
+  document.getElementById("nextBtn").style.display="none";
+  document.getElementById("score").innerHTML=
+  '<button onclick="restartQuiz()">Ulangi Kuis</button>';
+ }
+}
+function restartQuiz(){
+ qIndex=0;correct=0;
+ document.getElementById("score").innerHTML="";
+ loadQuestion();
+}
+loadQuestion();
+showSlide();
+</script>
+</body>
+</html>
